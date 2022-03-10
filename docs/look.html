@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+            body
+            {
+                background-color: black;
+                color: white;
+            }
+            pre
+            {
+                font-family: "Quicksand";
+            }
+        </style>
+    </head>
+    <body>
+        <pre>
+from tkinter import Entry, Tk, Label
+
+root = Tk()
+
+root.title("Mi tienda")
+
+root.geometry("650x360")
+
+titulo1 = Label(root, text="Ferretería Sonrisita Feliz").place(x=218, y=10)
+
+dni = Label(root, text="DNI").place(x=60, y=40)
+
+entradaDni = Entry(width=16).place(x=145, y=40)
+
+apellidos = Label(root, text="Apellidos")
+apellidos.place(x=40, y=80)
+
+entradaApellidos = Entry(width=24)
+entradaApellidos.place(x=145, y=80)
+
+nombres = Label(root, text="Nombres").place(x=368, y=80)
+
+entradaNombres = Entry()
+entradaNombres.place(x=440, y=80)
+
+direccion = Label(root, text="Dirección")
+direccion.place(x=39, y=120)
+
+entradaDireccion = Entry(width=53)
+entradaDireccion.place(x=145, y=120)
+
+telefono = Label(root, text="Teléfono")
+telefono.place(x=39, y=160)
+
+entradaTelefono = Entry(width=53)
+entradaTelefono.place(x=145, y=160)
+
+cod_proc = Label(root, text="Cod_Prod")
+cod_proc.place(x=39, y=210)
+
+decripcion = Label(root, text="Descripción")
+decripcion.place(x=130, y=210)
+
+unidad = Label(text="Unidad")
+unidad.place(x=236, y=210)
+
+cantidad = Label(text="Cantidad")
+cantidad.place(x=310, y=210)
+
+precio = Label(text="Precio")
+precio.place(x=400, y=210)
+
+subtotal = Label(text="Subtotal")
+subtotal.place(x=480, y=210)
+
+entrada1 = Entry(width=8)
+entrada1.place(x=39, y=250)
+
+entrada2 = Entry(width=8)
+entrada2.place(x=39, y=286)
+
+entrada3 = Entry(width=8)
+entrada3.place(x=39, y=322)
+
+entrada4 = Entry(width=8)
+entrada4.place(x=310, y=250)
+
+entrada5 = Entry(width=8)
+entrada5.place(x=310, y=286)
+
+entrada6 = Entry(width=8)
+entrada6.place(x=310, y=322)
+
+total = Label(text="Total")
+total.place(x=570, y=322)
+
+root.mainloop()
+        </pre>
+    </body>
+</html>
